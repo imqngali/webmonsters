@@ -1,0 +1,1271 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<title>WebMonsters - Агенство Интернет Решений</title>
+	<meta name="description"
+		content="Агентство WebMonsters - Мы оказываем комплексные услуги по   ✅ Созданию сайтов  ✅ Продвижение Instagram, Facebook   ✅ Таргетированной рекламе  ✅ Контекстная реклама  ✅Разработка Мобильных приложений  в Алматы, Казахстане, СНГ">
+	<meta name="keywords" content="">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" href="css/style.min.css?v=4.7">
+	<link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/media.min.css?v=2.9">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<link rel="shortcut icon" href="imgs/favicon.png" type="image/png">
+
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="npm/bootstrap-icons%401.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="left-block">
+				<div class="logo">
+					<a href="index.html"><img src="imgs/logo-header.webp" alt="WebMonsters"></a>
+				</div>
+				<div class="mobile-menu">
+					<div class="line l1"></div>
+					<div class="line l2"></div>
+					<div class="line l3"></div>
+				</div>
+			</div>
+
+			<div class="middle-block">
+				<div class="desktop-menu">
+					<nav>
+						<ul>
+							<li><a href="index.html" title="Главная">Главная</a></li>
+							<li><a href="about-us.html" title="О компании">О компании</a></li>
+							<li>
+								<a href="javascript:void(0);" title="Услуги">Услуги</a>
+								<ul>
+									<li><a href="sait.html" title="Создание сайтов/Landing Page">Создание сайтов/Landing
+											Page</a></li>
+									<li><a href="seo.html" title="Продвижение сайта, SEO">Продвижение сайта, SEO</a>
+									</li>
+									<li><a href="reklama.html" title="Контекстная реклама">Контекстная реклама</a></li>
+									<li><a href="target.html" title="Реклама в Instagram">Реклама в Instagram</a></li>
+								</ul>
+							</li>
+							<li><a href="portfolio.html" title="Портфолио">Портфолио</a></li>
+							<li><a href="clients.html" title="Наши клиенты">Наши клиенты</a></li>
+							<li><a href="contact.html" title="Контакты">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+			<div class="right-block">
+				<div class="phone">
+					<div class="item" data-item="almaty"><a href="tel: +7 (707) 585-17-52"><i class="bi bi-phone"></i>+7
+							(707) 585-17-52</a></div>
+
+					<div class="item" data-item="almaty"><a href="https://t.me/webmonsterskz/" target="_blank"><i
+								class="bi bi-telegram"></i>webmonsterskz</a></div>
+
+					<div class="item" data-item="astana"><a href="tel: +7 (707) 585-17-52"><i class="bi bi-phone"></i>+7
+							(707) 585-17-52</a></div>
+					<div class="item" data-item="astana"><a href="https://t.me/webmonsterskz/" target="_blank"><i
+								class="bi bi-telegram"></i>webmonsterskz</a></div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="pop-up">
+		<div class="pop-up-win">
+			<div class="close-pop-up"></div>
+			<div class="title">
+				Заполните форму
+				<span>и наш менеджер свяжется с Вами в ближайшее время</span>
+			</div>
+			<div class="form">
+				<div class="left-block">
+					<div class="input required name"><input type="text" name="name" required="required"
+							placeholder="Введите имя"></div>
+					<div class="input required phone"><input type="text" name="phone" required="required"
+							placeholder="Введите телефон"></div>
+				</div>
+				<div class="right-block">
+					<div class="input email"><input type="text" name="email" placeholder="Введите E-Mail"></div>
+					<div class="input city"><input type="text" name="city" placeholder="Введите город"></div>
+				</div>
+				<div class="bottom-block">
+					<div id="dropdown-menu" class="dropdown-menu">
+						<span class="title">Выберите услугу</span>
+						<ul>
+							<li><a>Создание сайтов / Landing Page</a></li>
+							<li><a>Продвижение сайта, SEO</a></li>
+							<li><a>Контекстная реклама</a></li>
+							<li><a>Продвижение в социальных сетях</a></li>
+							<li><a>Реклама в социальных сетях</a></li>
+							<li><a>Графический дизайн, Анимационные ролики</a></li>
+							<li><a>Копирайтинг для сайта</a></li>
+							<li><a>Разработка мобильных приложений</a></li>
+						</ul>
+					</div>
+					<button class="green-btn" onclick="ym(30603927,'reachGoal','sendform')">ОТПРАВИТЬ</button>
+				</div>
+			</div>
+
+
+			<input type="hidden" name="source" value="">
+		</div>
+	</div>
+	<script type="text/javascript">
+		$('.phone .item a, #call-btn ').click(function () {
+			gtag('event', 'click', { 'event_category': 'phone' });
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('.pop-up .pop-up-win .close-pop-up').click(function () {
+				$('.pop-up').css({
+					'opacity': '0',
+					'pointer-events': 'none'
+				});
+			});
+			$('.show-pop-up-btn').click(function () {
+				$('.pop-up').css({
+					'opacity': '1',
+					'pointer-events': 'auto'
+				});
+				$('.dropdown-menu .title').html($(this).attr('data-service'));
+			});
+
+		});
+	</script>
+	<script type="text/javascript">
+		function checkRequired(object) {
+			if ($(object).val() == '') {
+				$(object).parent('.input').addClass('required');
+			} else {
+				$(object).parent('.input').removeClass('required');
+			}
+		}
+		$('.pop-up .pop-up-win input[required="required"]').keyup(function () {
+			checkRequired($(this));
+		});
+		$('.pop-up .pop-up-win input[required="required"]').change(function () {
+			checkRequired($(this));
+		});
+	</script>
+	<script type="text/javascript">
+		function error_input(object) {
+			object.css({
+				'background-color': '#ffb0b0'
+			});
+			setTimeout(function () {
+				object.css({
+					'background-color': '#EDF1F9'
+				});
+			}, 4000);
+		}
+
+		$('.pop-up .pop-up-win .green-btn').click(function () {
+			var name = $('.pop-up .pop-up-win input[name="name"]'),
+				phone = $('.pop-up .pop-up-win input[name="phone"]'),
+				email = $('.pop-up .pop-up-win input[name="email"]'),
+				city = $('.pop-up .pop-up-win input[name="city"]'),
+				source = $('.pop-up .pop-up-win input[name="source"]'),
+				service = $('.dropdown-menu .title').html();
+
+			var submit = $(this);
+			submit
+				.attr('disabled', 'disabled')
+				.html('ОТПРАВКА...');
+
+			if (name.val().length < 3) {
+				error_input(name);
+				return;
+			}
+
+			if (phone.val().length < 9) {
+				error_input(phone);
+				return;
+			}
+
+			$.ajax({
+				type: 'POST',
+				url: 'php/send-order.php',
+				data: {
+					name: name.val(),
+					phone: phone.val(),
+					email: email.val(),
+					source: source.val(),
+					city: city.val(),
+					service: service
+				},
+				success: function (reply) {
+					console.log(reply);
+					$('.pop-up .pop-up-win>.title').html('Заявка отправлена! <span style="display: block;">Наш менеджер свяжется с Вами в ближайшее время</span>')
+					$('.pop-up .pop-up-win .form').hide();
+					gtag('event', 'submit', { 'event_category': 'form' });
+				},
+				error: function () {
+					alert('При отправке произошла ошибка. Пожалуйста, повторите попытку снова');
+				},
+				complete: function (argument) {
+					submit
+						.removeAttr('disabled')
+						.html('ОТПРАВИТЬ');
+				}
+			});
+		});
+	</script>
+	<div class="mobile-menu-block m-main">
+		<div class="close-menu"></div>
+		<ul>
+			<li><a href="index.html" title="Главная">Главная</a></li>
+			<li><a href="about-us.html" title="О компании">О компании</a></li>
+			<li><a href="javascript:void(0);" class="show-service-menu" title="Услуги">Услуги</a></li>
+			<li><a href="portfolio.html" title="Портфолио">Портфолио</a></li>
+			<li><a href="clients.html" title="Наши клиенты">Наши клиенты</a></li>
+			<li><a href="contact.html" title="Контакты">Контакты</a></li>
+		</ul>
+	</div>
+	<div class="mobile-menu-block m-service">
+		<div class="close-menu"></div>
+		<ul>
+			<li><a href="sait.html" title="Создание сайтов/Landing Page">Создание сайтов/Landing Page</a></li>
+			<li><a href="seo.html" title="Продвижение сайта, SEO">Продвижение сайта, SEO</a></li>
+			<li><a href="smm.html" title="Продвижение в Instagram">Продвижение в Instagram</a></li>
+			<li><a href="target.html" title="Реклама в Instagram">Реклама в Instagram</a></li>
+			<li><a href="reklama.html" title="Контекстная реклама">Контекстная реклама</a></li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		$('.mobile-menu-block .close-menu').click(function () {
+			$(this).parent(".mobile-menu-block").css({
+				'transform': 'translateX(500px)',
+				'opacity': '0',
+				'pointer-events': 'none'
+			});
+		});
+		$('a.show-service-menu').click(function () {
+			$(".mobile-menu-block.m-service").css({
+				'transform': 'translateX(0px)',
+				'opacity': '1',
+				'pointer-events': 'auto'
+			});
+		});
+		$('header .left-block .mobile-menu').click(function () {
+			$(".mobile-menu-block.m-main").css({
+				'transform': 'translateX(0px)',
+				'opacity': '1',
+				'pointer-events': 'auto'
+			});
+			$(this).css({
+				'transform': 'rotate(90deg)'
+			});
+		});
+		$('.mobile-menu-block.m-main .close-menu').click(function () {
+			$('header .left-block .mobile-menu').css({
+				'transform': 'rotate(0deg)'
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		$('header .middle-block .controller-info .cities-list li').click(function () {
+			var data_item = $(this).attr('data-item');
+
+			$('header .middle-block .controller-info .cities-list li').removeClass('active');
+			$(this).addClass('active');
+
+			$('header .middle-block .controller-info .info-block div, header .right-block .phone .item').hide();
+			$('header .middle-block .controller-info .info-block div[data-item="' + data_item + '"], header .right-block .phone .item[data-item="' + data_item + '"]').show();
+		});
+
+		$('header .middle-block .desktop-menu ul li a[href="/smm"], .mobile-menu-block ul li a[href="/smm').parent('li').addClass('active').parent('ul').parent('li').addClass('active');
+	</script>
+
+	<script type="text/javascript">
+		window.onload = function () {
+			var menuElem = document.getElementById('dropdown-menu'),
+				titleElem = menuElem.querySelector('.title');
+			document.onclick = function (event) {
+				var target = elem = event.target;
+				while (target != this) {
+					if (target == menuElem) {
+						if (elem.tagName == 'A') titleElem.innerHTML = elem.textContent;
+						menuElem.classList.toggle('open')
+						return;
+					}
+					target = target.parentNode;
+				}
+				menuElem.classList.remove('open');
+			}
+		}
+	</script>
+	<div id="s-first-screen"
+		style="background-image: url(imgs/s-first-screen-smm-bg.png); background-position: center top;" data-page="smm">
+		<div class="container">
+			<div class="description">
+				<div class="level-1">
+					<span>Продвижение в Instagram (SMM)</span>
+				</div>
+				<div class="level-2"></div>
+				<div class="level-3" style="margin-top: 19px;"><span>Увеличим продажи Вашего бизнеса<br>за счет широкого
+						охвата целевой аудитории</span>
+				</div>
+			</div>
+			<div class="buttons">
+				<button class="red-btn btn show-pop-up-btn"
+					data-service="Продвижение в Instagram">ЗАКАЗАТЬ ЗВОНОК</button>
+			</div>
+		</div>
+	</div>
+	<div id="p-smm" class="page-text">
+		<div class="container">
+			<h2 class="title-1 p-title-02">Почему выбирают нас?</h2>
+			<div id="s-our-advantages" class="other-page">
+				<div class="container">
+					<div class="items">
+						<div class="item">
+							<div class="block b-01">
+								<div class="title">УНИВЕРСАЛЬНОСТЬ</div>
+								<div class="text">
+									Работаем с клиентами из любой<br>
+									сферы — от банковских учреждений,<br>
+									автодилеров, производителей<br>
+									до санаториев.
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="block b-02">
+								<div class="title">ТЕХНОЛОГИИ</div>
+								<div class="text">
+									Мы постоянно следим за появлением<br>
+									новых технологий в digital-среде<br>
+									и используем их для более<br>
+									эффективного результата.
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="block b-03">
+								<div class="title">ОПЫТ</div>
+								<div class="text">
+									Успешный 10-летний опыт работы<br>
+									в сфере интернет-рекламы<br>
+									и разработки сайтов — гарантия<br>
+									вашего результата.
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="block b-04">
+								<div class="title">ДОСТУПНОСТЬ</div>
+								<div class="text">
+									Предлагаем удобные условия<br>
+									как для небольших компаний<br>
+									и предпринимателей, так и для<br>
+									крупного бизнеса.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mobile-controll-panel">
+						<div class="arrow-left arrow" data-num="-1"></div>
+						<div class="count"><span>1</span>/4</div>
+						<div class="arrow-right arrow" data-num="1"></div>
+					</div>
+					<script type="text/javascript">
+						var s_our_advantages_acount = 1;
+						$('#s-our-advantages .arrow').click(function () {
+							s_our_advantages_acount += parseInt($(this).attr("data-num"));
+
+							if (s_our_advantages_acount < 1) s_our_advantages_acount = 4;
+							if (s_our_advantages_acount > 4) s_our_advantages_acount = 1;
+
+							$("#s-our-advantages .mobile-controll-panel .count span").html(s_our_advantages_acount);
+
+							$("#s-our-advantages .items .item").css({
+								'opacity': '0',
+								'pointer-events': 'none'
+							});
+
+							$("#s-our-advantages .items .item").eq(s_our_advantages_acount - 1).css({
+								'opacity': '1',
+								'pointer-events': 'auto'
+							});
+						});
+					</script>
+				</div>
+
+			</div>
+			<div id="s-our-service">
+				<h2 class="title-1">Стоимость</h2>
+				<div class="items">
+					<div class="item" itemscope="" itemtype="http://schema.org/Product">
+						<div class="block b-01">
+							<div class="head">
+								<div class="title single" itemprop="name">SMM BASIC "ПОД КЛЮЧ"</div>
+							</div>
+							<div class="body">
+								<div class="price" itemprop="offers" itemscope=""
+									itemtype="http://schema.org/AggregateOffer">
+									<link itemprop="availability" href="http://schema.org/InStock">
+									от
+									<span itemprop="lowPrice">109 000</span> тнг.
+									<meta itemprop="priceCurrency" content="KZT">/мес.
+								</div>
+								<div class="text" itemprop="description">
+									<ul>
+										<li>1 соц.сеть на выбор:<br> <b>Instagram или Facebook</b></li>
+										<li>Создание и настройка аккаунта</li>
+										<li>Разработка фирменного шаблона для постов (3 шт.)</li>
+										<li>Разработка и согласование контент-плана</li>
+										<li>Публикация <b>20 уникальных постов</b> с согласованием (Reels, Фото, Видео
+											контент)</li>
+										<li>Дублирование постов в Stories</li>
+										<li>Чистка страниц от спама</li>
+										<li>Администрирование и модерация страницы</li>
+										<li>Анонсирование акций заказчика</li>
+										<li>Отслеживание, ответы на вопросы пользователей</li>
+										<li>Привлечение целевой аудитории (заявки, запросы)</li>
+										<li>Настройка, запуск, ведение таргетирование рекламы<br><b>+ бюджет от 100 000
+												тнг. для 1 соц.сети</b></li>
+										<li>Предоставление отчета о результатах</li>
+									</ul>
+									<div class="design">БОНУС: Создание иконок для Актуального/размещение информации (до
+										5/1 шт.)</div>
+
+								</div>
+								<button 
+									class="green-btn show-pop-up-btn"
+									data-service="Продвижение в Instagram">ЗАКАЗАТЬ</button>
+							</div>
+						</div>
+					</div>
+					<div class="item" itemscope="" itemtype="http://schema.org/Product">
+						<div class="block b-02">
+							<div class="head">
+								<div class="title single" itemprop="name">SMM PRO "ПОД КЛЮЧ"</div>
+							</div>
+							<div class="body">
+								<div class="price" itemprop="offers" itemscope=""
+									itemtype="http://schema.org/AggregateOffer">
+									<link itemprop="availability" href="http://schema.org/InStock">
+									от
+									<span itemprop="lowPrice">139 000</span> тнг.
+									<meta itemprop="priceCurrency" content="KZT">/мес.
+								</div>
+								<div class="text" itemprop="description">
+									<ul>
+										<li>1 соц.сеть на выбор:<br> <b>Instagram или Facebook</b></li>
+										<li>Создание и настройка аккаунта</li>
+										<li>Разработка фирменного шаблона для постов (3 шт.)</li>
+										<li>Разработка и согласование контент-плана</li>
+										<li>Публикация <b>30 уникальных постов</b> с согласованием (Stories, Reels,
+											Фото, Видео контент)</li>
+										<li>Разработка фирменного шаблона для Stories (3 шт.)</li>
+										<li>Чистка страниц от спама</li>
+										<li>Администрирование и модерация страницы</li>
+										<li>Анонсирование акций заказчика</li>
+										<li>Проведение опросов аудитории</li>
+										<li>Проведение 1 конкурса в месяц</li>
+										<li>Отслеживание, ответы на вопросы пользователей</li>
+										<li>Привлечение целевой аудитории (заявки, запросы)</li>
+										<li>Настройка, запуск, ведение таргетирование рекламы<br><b>+ бюджет от 100 000
+												тнг. для 1 соц.сети</b></li>
+										<li>Предоставление отчета о результатах</li>
+									</ul>
+									<div class="design">БОНУС: Создание иконок для Актуального/размещение информации (до
+										5/1 шт.)</div>
+
+								</div>
+								<button
+									class="green-btn show-pop-up-btn"
+									data-service="Продвижение в Instagram">ЗАКАЗАТЬ</button>
+							</div>
+						</div>
+					</div>
+					<div class="item" itemscope="" itemtype="http://schema.org/Product">
+						<div class="block b-03">
+							<div class="head">
+								<div class="title single" itemprop="name">SMM PLATINUM "ПОД КЛЮЧ"</div>
+							</div>
+							<div class="body">
+								<div class="price" itemprop="offers" itemscope=""
+									itemtype="http://schema.org/AggregateOffer">
+									<link itemprop="availability" href="http://schema.org/InStock">
+									от
+									<span itemprop="lowPrice">179 000</span> тнг.
+									<meta itemprop="priceCurrency" content="KZT">/мес.
+								</div>
+								<div class="text" itemprop="description">
+									<ul>
+										<li>2 соц.сеть:<br> <b>Instagram + Facebook</b></li>
+										<li>Создание и настройка аккаунта</li>
+										<li>Разработка фирменного шаблона для постов (3 шт.)</li>
+										<li>Разработка и согласование контент-плана</li>
+										<li>Публикация <b>30 уникальных постов</b> с согласованием (Stories, Reels,
+											Фото, Видео контент)</li>
+										<li>Разработка фирменного шаблона для Stories (3 шт.)</li>
+										<li>Чистка страниц от спама</li>
+										<li>Администрирование и модерация страницы</li>
+										<li>Анонсирование акций заказчика</li>
+										<li>Проведение опросов аудитории</li>
+										<li>Проведение 1 конкурса в месяц</li>
+										<li>Отслеживание, ответы на вопросы пользователей</li>
+										<li>Привлечение целевой аудитории (заявки, запросы)</li>
+										<li>Настройка, запуск, ведение таргетирование рекламы<br><b>+ бюджет от 150 000
+												тнг. для 2 соц.сетей</b></li>
+										<li>Предоставление отчета о результатах</li>
+									</ul>
+									<div class="design">БОНУС: Создание иконок для Актуального/размещение информации (до
+										5/1 шт.)</div>
+
+								</div>
+								<button
+									class="green-btn show-pop-up-btn"
+									data-service="Продвижение в Instagram">ЗАКАЗАТЬ</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h1>Продвижение в социальных сетях – SMM</h1>
+			<p align="justify">SMM, или Social Media Marketing подразумевает под собой продвижение торговой марки в
+				социальных сетях и других онлайн-платформах, для которого в качестве основных механизмов используют
+				прямую, естественную и скрытую рекламу.
+				<br> <br>
+
+				Список функций SMM-маркетинга:
+			</p>
+
+			<ul>
+				<li>Продвижение различных групп, создание контента, взаимодействие в социальных сетях.</li>
+				<li>Производство в направлении создания видео и ведения блогов.</li>
+				<li>>Брендирование; создание видео для известных платформ; реклама, размещаемая в фильмах и тому
+					подобное.</li>
+				<li>Таргетированная реклама.</li>
+				<li>Систематическое наблюдение в социальных сетях.</li>
+
+
+
+			</ul>
+			<p align="justify"> Оформить заказ на предоставление услуги маркетинга в социальных сетях нужно в тех
+				случаях, когда вы стремитесь привлечь как можно больше пользователей.
+
+
+			</p>
+			<div class="page-button-about" data-hidden="true">Подробнее</div>
+			<div class="hidden-content">
+				<div class="content-height">
+					<p align="justify"><strong>СMM в Алматы</strong> станет отличным решением для раскрутки всего того,
+						к чему проявляют интерес многие потребители и что причислят к товарам и услугам повседневного
+						использования:
+					</p>
+					<ul>
+						<li> Товары регулярного использования.</li>
+						<li> Имиджевая продукция.</li>
+						<li> Проекты, обучающие платформы.</li>
+						<li> Первичные и вторичные услуги, бизнес-консультирование.</li>
+						<li> Сервисное обслуживание.</li>
+						<li> Торговые марки и их разработчики.</li>
+					</ul>
+
+					<p align="justify"><strong>SMM в Алматы</strong> не будет действенен для:</p>
+
+					<ul>
+						<li>B2B-продукции и услуг. Например, бухгалтерские услуги, производство специального
+							оборудования, удобрения - все это не получило широкого признания в социальных сетях.
+							Пользователи проявляют интерес именно к развлечениям. К исключениям можно отнести лишь
+							управляющих, копирайтеров, специалистов по маркетингу и журналистов, которых как раз могут
+							интересовать подобные темы. Такие личности систематически посещают социальные сети для
+							участия в дискуссиях.</li>
+						<li>Услуг и товаров, подразумевающих оперативную транзакцию.</li>
+						<li>Деликатных тем. Например, обсуждение походов к врачам люди часто оставляют на личную беседу
+							со специалистом, нежели с другими участниками форума.</li>
+
+					</ul>
+
+					<h2>Механизмы рекламы в социальных сетях</h2>
+
+					<p align="justify"> <strong>SMM продвижение в Алматы </strong>состоит из следующих механизмов:</p>
+
+					<ul>
+						<li>Создание контента в блогах, их разработка и продвижение. Вовлечение в работу других блогеров
+							и лиц, получивших широкое признание.</li>
+						<li>Управление тематическими группами, участие в обсуждениях и оставление комментариев, скрытый
+							маркетинг.</li>
+						<li>Прямой маркетинг: ответы на вопросы, различные отклики, прямая реклама в социальных сетях.
+						</li>
+						<li>Трансляции в режиме реального времени, истории и посты.</li>
+						<li>Способы осуществления вирусного маркетинга.</li>
+						<li>Разработка интерактивного контента, включающая в себя анкетные опросы, акционные программы.
+						</li>
+						<li>SMO, или Social media optimization – привлечение пользователей из социальных сетей.</li>
+					</ul>
+					<h2>Положительные и отрицательные стороны SMM</h2>
+					<p align="justify">Плюсы: </p>
+
+					<ul>
+
+						<li> Пользователи, как правило, верят всему тому, что наблюдают в сети Интернет, поэтому не
+							интерпретируют это в качестве прямой рекламы.</li>
+						<li> Независимость от расположения - привлечение пользователей из прочих государств намного
+							проще, чем иные способы продвижения.</li>
+						<li> Рекламный контакт по низкой цене - стоимость намного ниже, чем реклама в печатных изданиях
+							или на телевидении.</li>
+						<li> Возможность выбора ЦА с высоким уровнем точности.</li>
+						<li>Фидбек и стремительный отзыв: в отличие от SEO, вы можете получить моментальную реакцию на
+							любые посты. Высокая скорость получения и передачи сведений позволяет оперативно
+							корректировать SMM-стратегию, реагировать на предложения и замечания, а также предоставлять
+							наилучший контент.</li>
+
+					</ul>
+
+					<p align="justify">Минусы: </p>
+
+
+					<ul>
+						<li> Для получения результата следует систематически выполнять действия: обновление контента,
+							публикация постов и индивидуальных работ, снятие видео.</li>
+						<li> Точный расчет финансовых ресурсов рекламной кампании не предоставляется возможным.</li>
+						<li> Вы не можете получить стопроцентную гарантию предполагаемого результата.</li>
+						<li> Не относится к одной из замен обычной поисковой раскрутки. Всем известно, что большинство
+							пользователей ищут продукцию и услуги именно посредством строки поиска.</li>
+						<li> Уверенные пользователи могут отличать контент, предназначенный для рекламы от иных типов
+							информации.</li>
+						<li>Есть угроза репутации - нужно всего лишь несколько раз допустить ошибки в тех или иных
+							постах, ответах.</li>
+
+					</ul>
+
+					<p align="justify">Заказать услугу <strong>СММ маркетинга</strong> можно в агентстве в Алматы.
+						Эксперты в данной области создают специальные методы для раскрутки бизнеса в социальных сетях,
+						дают рекомендации по поводу интересующих вопросов.</p>
+
+					<h2> Положительное стороны обращения в наше агентство</h2>
+
+					<p align="justify"> В том случае, если вы обращаетесь в <strong> CMM агентство в Алматы</strong> за
+						услугой продвижения и раскрутки учетной записи в социальных сетях, то получаете следующие плюсы:
+					</p>
+
+					<ul>
+
+						<li> Увеличение продаж. Сотрудники будут помогать пользователю на всех уровнях раскрутки.</li>
+						<li> Привлечение потенциальных клиентов. Специалисты <strong> SMM агентства в Алматы</strong>
+							разработают рекламную кампанию, что поможет увеличить число подписчиков и получить
+							популярность.</li>
+						<li> Рост трафика на сайте. Эксперты увеличат уровень популярности бренда и спрос на официальный
+							сайт, помогут обрести лояльных клиентов, которые уже располагают информацией о сильных
+							сторонах вашего бизнеса.</li>
+						<li> Рост рейтингов предприятия и увеличение спроса. Сотрудники ведут общение с фолловерами и
+							дают исчерпывающие ответы на волнующие вопросы.</li>
+
+					</ul>
+
+					<p align="justify"> Связавшись с <strong> SMM агентством</strong>, вы будете всегда получать отчеты
+						о проделанной работе. Специалисты предоставляют понятные графики, создают стратегии и тактики и
+						работают всегда на результат. Если необходимо <strong>раскрутить Инстаграм в Алматы </strong>,
+						оставьте заявку на сайте или позвоните по телефону.</p><br><br>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="display: none !important;background-image: url(imgs/s-work-sprite-icons-2-green.png);"></div>
+	<div id="s-work"
+		style="background-image: url(imgs/s-work-and-portfolio-bg.png);background-repeat: no-repeat;background-position: center top;">
+		<div class="container">
+			<h2>КАК МЫ РАБОТАЕМ</h2>
+			<div class="items">
+				<div class="item i-01">
+					<div class="block">
+						<div class="step-num">Шаг <span>01.</span></div>
+						<div class="icon"></div>
+						<div class="title">Заполнение заявки</div>
+						<div class="text">Вы заполняете заявку на услугу <br>и высылаете обратно нам.</div>
+					</div>
+				</div>
+				<div class="item i-02">
+					<div class="block">
+						<div class="step-num">Шаг <span>02.</span></div>
+						<div class="icon"></div>
+						<div class="title">Связь с клиентом</div>
+						<div class="text">Мы связываемся с Вами, <br>уточняем детали.</div>
+					</div>
+				</div>
+				<div class="item i-03">
+					<div class="block">
+						<div class="step-num">Шаг <span>03.</span></div>
+						<div class="icon"></div>
+						<div class="title">Подтверждение</div>
+						<div class="text">Вы подтверждаете заказ <br>и вносите оплату.</div>
+					</div>
+				</div>
+				<div class="item i-04">
+					<div class="block">
+						<div class="step-num">Шаг <span>04.</span></div>
+						<div class="icon"></div>
+						<div class="title">Распределяем роли</div>
+						<div class="text">Даем задание каждому <br>сотруднику команды.</div>
+					</div>
+				</div>
+				<div class="item i-05">
+					<div class="block">
+						<div class="step-num">Шаг <span>05.</span></div>
+						<div class="icon"></div>
+						<div class="title">Complete!</div>
+						<div class="text">Вы получаете результат, <br>и видите рост продаж!</div>
+					</div>
+				</div>
+			</div>
+			<button
+				class="border-btn get-cons show-pop-up-btn" data-service="Продвижение в Instagram">ЗАКАЗАТЬ
+				ЗВОНОК</button>
+		</div>
+	</div>
+
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('.fancybox-item').fancybox({
+				buttons: [
+					'zoom',
+					'close'
+				]
+			});
+		});
+	</script>
+
+	<script type="text/javascript">
+		var s_portfolio_count = 1;
+		$('#s-portfolio .arrow').click(function () {
+			s_portfolio_count += parseInt($(this).attr("data-num"));
+
+			if (s_portfolio_count < 1) s_portfolio_count = 7;
+			if (s_portfolio_count > 7) s_portfolio_count = 1;
+
+			$("#s-portfolio .mobile-controll-panel .count span").html(s_portfolio_count);
+
+			$("#s-portfolio .item").css({
+				'opacity': '0',
+				'pointer-events': 'none',
+				'transform': 'scale(0.8)'
+			});
+
+			$("#s-portfolio .item#i-" + s_portfolio_count).css({
+				'opacity': '1',
+				'pointer-events': 'auto',
+				'transform': 'scale(1)'
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		var type = more = '', last_item,
+			short = true,
+			limite = '7',
+			limite_mobile = '7';
+
+		if (window.screen.width < 700) limite = limite_mobile;
+
+		function loadPortfolio() {
+			$.ajax({
+				type: 'POST',
+				url: 'php/get-portfolio.php',
+				data: {
+					limite: limite,
+					type: type,
+					more: more,
+					last_item: last_item
+				},
+				success: function (reply) {
+					if (more != '') {
+						$('#s-portfolio .items').append(reply);
+					} else {
+						$('#s-portfolio .items').html(reply);
+					}
+					setTimeout(function () {
+						if (window.screen.width > 700) {
+							$('#s-portfolio .item').css({
+								'transform': 'scale(1)',
+								'opacity': '1'
+							});
+						} else {
+							if (short) {
+								$('#s-portfolio .item#i-1').css({
+									'transform': 'scale(1)',
+									'opacity': '1',
+									'pointer-events': 'auto'
+								});
+							} else {
+								$('#s-portfolio .item').css({
+									'transform': 'scale(1)',
+									'opacity': '1'
+								});
+							}
+						}
+					}, 100);
+				}
+			});
+		}
+
+		loadPortfolio();
+
+		$('#p-portfolio .tabs td span').click(function () {
+			more = '';
+			$('#s-portfolio .item').css({
+				'transform': 'scale(0.8)',
+				'opacity': '0'
+			});
+			type = $(this).attr('data-type');
+			$('#p-portfolio .tabs td').removeClass('active');
+			$(this).parent('td').addClass('active');
+			setTimeout(function () {
+				loadPortfolio();
+			}, 500);
+		});
+
+		$('#p-portfolio .more-btn').click(function () {
+			more = 'more';
+			last_item = $(this).attr('data-last-item');
+			loadPortfolio();
+		});
+	</script>
+
+	<style>
+		#s-portfolio {
+			padding-bottom: 65px;
+		}
+	</style>
+	<div style="display: none !important;background-image: url(imgs/reviews-pagination-sprite-icons-green.png);"></div>
+	<div id="s-reviews">
+		<div class="container">
+			<h2>Отзывы наших клиентов</h2>
+			<div class="items owl-carousel">
+				<div class="item">
+					<div class="text">
+						Мы сотрудничаем с WebMonsters второй год подряд. На сегодня, в условиях нестабильности на рынке,
+						это действительно долгий срок. Хотим выразить благодарность за профессионализм, надежность и
+						ответственность ваших специалистов в любых технических вопросах.
+					</div>
+					<div class="author">ДС «БАЙТЕРЕК»</div>
+				</div>
+				<div class="item">
+					<div class="text">
+						Своевременно и качественно предоставлены все услуги согласно договору. Радует оперативность и
+						профессионализм, с которыми сотрудники WebMonsters отвечали на все наши вопросы, а также в любое
+						удобное для нас время предоставляли информацию о ходе работ. Все пожелания были учтены, спасибо!
+					</div>
+					<div class="author">«FLORENCE»</div>
+				</div>
+				<div class="item">
+					<div class="text">
+						Хотим отметить, что все задачи, поставленные перед специалистами данной компании, были выполнены
+						грамотно и своевременно. Процесс работы над нашим проектом был организован и слажен, сотрудники
+						WebMonsters учитывали все пожелания, одновременно предоставляя профессиональные рекомендации и
+						оптимальные решения тех или иных вопросов.
+					</div>
+					<div class="author">«WARM HOME»</div>
+				</div>
+				<div class="item">
+					<div class="text">
+						Хотим выразить свою искреннюю благодарность за весь совместный объем работ по продвижению нашего
+						аккаунта в Instagram. Коллектив компании «WebMonsters» всегда доброжелателен, креативен,
+						проявляет высокий творческий потенциал, и что особо радует – максимально точно и в срок
+						выполняет все задания, стремясь к оптимальному решению задач любой сложности.
+					</div>
+					<div class="author">«ЗИМНИЙ САД»</div>
+				</div>
+				<div class="item">
+					<div class="text">
+						Сотрудничаем не первый год с компанией «WebMonsters». На протяжении всего периода специалисты
+						компании проявляют свой профессионализм, компетентность, нешаблонный подход и самостоятельность
+						в решении задач, а также заинтересованность в качестве конечного результата.
+					</div>
+					<div class="author">«TRANSAVIA TOUR»</div>
+				</div>
+				<div class="item">
+					<div class="text">
+						В компании «WebMonsters — Агентство Интернет Решений» работает команда настоящих профессионалов.
+						В работе с ними всегда знаешь, что все проблемы и задачи будут решены максимально быстро и
+						качественно.
+					</div>
+					<div class="author">«LUXCOSMED»</div>
+				</div>
+				<div class="item">
+					<div class="text">
+						Хотим поблагодарить коллектив «WebMonsters — Агентство Интернет Решений» за помощь в реализации
+						проекта по созданию корпоративного сайта нашей организации, а также его техническую поддержку.
+						Всегда приятно работать с компаниями, сотрудники которых на протяжении всего сотрудничества
+						проявляют оперативность и грамотность.
+					</div>
+					<div class="author">ТОО «ЦТРМ»</div>
+				</div>
+				<div class="item">
+					<div class="text">
+						Сотрудники компании WebMonsters показали себя настоящими профессионалами. В процессе работы им
+						не раз приходилось решать самые сложные задачи, учитывая наши пожелания. Одновременно ими
+						предлагались полезные рекомендации и советы, многие из которых были учтены и внедрены.
+					</div>
+					<div class="author">«МАДЛЕН»</div>
+				</div>
+			</div>
+			<div class="pagination">
+				<div class="left-arrow arrow"></div>
+				<div class="numbers">
+					<span class="current"></span>
+					<span class="count"></span>
+				</div>
+				<div class="right-arrow arrow"></div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var count_slide = $('#s-reviews .items .item').length,
+			current_slide = 1;
+		setSliderCount();
+
+		$('#s-reviews .pagination .numbers .count').html('/' + count_slide);
+		function setSliderCount() {
+			if (current_slide < 1) {
+				current_slide = count_slide;
+			}
+
+			if (current_slide > count_slide) {
+				current_slide = 1;
+			}
+
+			if (current_slide < 10 && window.screen.width > 700) {
+				current_slide = '0' + current_slide;
+			}
+
+			$('#s-reviews .pagination .numbers .current').html(current_slide);
+		}
+		$("#s-reviews .items").owlCarousel({
+			items: 1,
+			nav: true,
+			loop: true,
+			autoplay: function (event) {
+				alert('dsad');
+			},
+			autoplayTimeout: 5000,
+			onDragged: function (event) {
+				current_slide = event.page.index + 1;
+				setSliderCount();
+			},
+			onTranslated: function (event) {
+				current_slide = event.page.index + 1;
+				setSliderCount();
+			},
+			navText: ['<div class="s-reviews-left-arrow"></div>', '<div class="s-reviews-right-arrow"></div>']
+		});
+
+		$('#s-reviews .left-arrow').click(function () {
+			$('#s-reviews .owl-carousel .owl-nav .owl-prev').click();
+			current_slide--;
+			setSliderCount();
+		});
+		$('#s-reviews .right-arrow').click(function () {
+			$('#s-reviews .owl-carousel .owl-nav .owl-next').click();
+			current_slide++;
+			setSliderCount();
+		});
+	</script>
+	<div style="display: none !important;background-image: url(imgs/our-partners-arrow-sprite-icons-green.png);"></div>
+	<div id="s-our-clients">
+		<div class="container">
+			<h2>Наши клиенты</h2>
+			<div class="slider">
+				<div class="controller-block left">
+					<div class="arrow-left arrow"></div>
+				</div>
+				<div class="items owl-carousel">
+					<div class="item" style="background-image: url(imgs/partners-logo/00000001.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/0000001.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/000001.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/00001.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/0001.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/001.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/002.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/003.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/004.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/005.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/006.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/007.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/008.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/009.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/010.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/0100.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/0101.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/0102.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/0103.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/0104.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/0105.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/0106.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/0107.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/0108.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/0109.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/011.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/0110.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/0111.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/0112.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/0113.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/0114.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/0115.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/0116.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/0117.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/0118.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/0119.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/012.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/0120.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/0121.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/0122.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/0123.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/0124.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/0125.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/0126.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/0127.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/013.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/014.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/015.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/016.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/017.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/018.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/019.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/020.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/021.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/022.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/023.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/024.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/025.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/026.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/027.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/028.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/029.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/030.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/031.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/032.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/033.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/034.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/035.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/036.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/037.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/038.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/039.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/040.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/041.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/042.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/043.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/044.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/045.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/046.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/047.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/048.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/050.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/051.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/052.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/053.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/054.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/055.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/056.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/057.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/058.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/059.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/060.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/061.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/062.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/063.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/064.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/065.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/066.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/067.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/068.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/069.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/070.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/071.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/072.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/074.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/075.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/076.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/078.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/079.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/080.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/081.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/082.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/083.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/084.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/085.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/086.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/087.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/088.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/089.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/090.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/091.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/092.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/093.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/094.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/096.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/097.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/098.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/099.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/1553425871.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/1553426065.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/1553426231.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/1553426361.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/1553427067.webp);"></div>
+					<div class="item" style="background-image: url(imgs/partners-logo/1565694171.webp);"></div>
+				</div>
+				<div class="controller-block right">
+					<div class="arrow-right arrow"></div>
+				</div>
+			</div>
+			<div class="mobile-controll-panel">
+				<div class="arrow-left arrow"></div>
+				<div class="arrow-right arrow"></div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#s-our-clients .slider .items").owlCarousel({
+				nav: true,
+				loop: true,
+				autoplay: true,
+				autoplayTimeout: 5000,
+				navText: ['<div class="controller-block left"><div class="arrow-left arrow"></div></div>', '<div class="controller-block right"><div class="arrow-right arrow"></div></div>'],
+				responsive: {
+					320: {
+						items: 3
+					},
+					900: {
+						items: 5
+					}
+				}
+			});
+			$('#s-our-clients .controller-block .arrow-left, #s-our-clients .mobile-controll-panel .arrow-left').click(function () {
+				$('#s-our-clients .owl-carousel .owl-nav .owl-prev').click();
+			});
+			$('#s-our-clients .controller-block .arrow-right, #s-our-clients .mobile-controll-panel .arrow-right').click(function () {
+				$('#s-our-clients .owl-carousel .owl-nav .owl-next').click();
+			});
+		});
+
+	</script>
+	<style type="text/css">
+		#s-our-clients .owl-carousel .owl-nav {
+			display: none !important;
+		}
+	</style>
+	<div class="go-top-btn"></div>
+	<script type="text/javascript">
+		$('.page-text .page-button-about').click(function () {
+			if ($(this).attr('data-hidden') == 'true') {
+				var content_height = $(this).next('.hidden-content').find('.content-height').height();
+				$(this).next('.hidden-content').css('max-height', content_height);
+				$(this).attr('data-hidden', 'false');
+			} else {
+				$(this).next('.hidden-content').css('max-height', '0px');
+				$(this).attr('data-hidden', 'true');
+			}
+		});
+
+
+		var top_show = 150;
+		var delay = 1500;
+		$(document).ready(function () {
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > top_show) $('.go-top-btn').fadeIn();
+				else $('.go-top-btn').fadeOut();
+			});
+
+			$('.go-top-btn').click(function () {
+				$('body, html').animate({
+					scrollTop: 0
+				}, delay);
+			});
+		});
+	</script>
+	<footer>
+		<div class="container">
+			<div class="block menu">
+				<div class="title">Меню сайта</div>
+				<nav class="footer-menu">
+					<ul>
+						<li><a href="index.html" title="Главная">Главная</a></li>
+						<li><a href="about-us.html" title="Услуги">О компании</a></li>
+						<li><a href="portfolio.html" title="Портфолио">Портфолио</a></li>
+						<li><a href="clients.html" title="Клиенты">Клиенты</a></li>
+						<li><a href="contact.html" title="Контакты">Контакты</a></li>
+					</ul>
+				</nav>
+				<button class="red-btn show-pop-up-btn" data-service="Выберите услугу">ЗАКАЗАТЬ ЗВОНОК</button>
+			</div>
+			<div class="block service">
+				<div class="title">Услуги</div>
+				<ul>
+					<li><a href="sait.html" title="Создание сайтов/Landing Page">Создание сайтов/Landing Page</a></li>
+					<li><a href="seo.html" title="Продвижение сайта, SEO">Продвижение сайта, SEO</a></li>
+					<li><a href="reklama.html" title="Контекстная реклама">Контекстная реклама</a></li>
+					<li><a href="target.html" title="Реклама в Instagram">Реклама в Instagram</a></li>
+				</ul>
+			</div>
+			<div class="block contacts">
+				<div class="title">Контакты</div>
+				<div class="item phone"><span class="bi-phone"></span><a href="tel: +7 (707) 585-17-52">+7 (707)
+						585-17-52</a>
+				</div>
+				<div class="item telegram"><span class="bi-telegram"></span><a
+						href="https://t.me/webmonsterskz/">webmonsterskz</a>
+				</div>
+				<div class="item whatsapp"><span class="bi-whatsapp"></span><a
+						href="https://wa.me/77075851752">webmonsterskz</a>
+				</div>
+			</div>
+			<div class="bottom-block">
+				<button class="red-btn mobile-btn show-pop-up-btn" data-service="Выберите услугу">ЗАКАЗАТЬ
+					ЗВОНОК</button>
+				<a href="index.html"><img src="imgs/logo-footer-white.png" alt="WebMonsters" class="logo"></a>
+				<div class="copyright-text">
+					2017 - 2023 © Все права защищены. «Агентство Интернет Решений - WebMonsters»
+				</div>
+			</div>
+		</div>
+	</footer>
+	<a href="tel:+7 (707) 585-17-52"
+		id="call-btn"></a>
+
+	<script type="text/javascript">
+		if (window.screen.width < 700) {
+			var footer_contacts = $('footer .block.contacts');
+			$('footer .block.contacts').remove();
+			$('footer .block.menu').after(footer_contacts);
+
+			var footer_social_link = $('footer .bottom-block .social-link-block');
+			$('footer .bottom-block .social-link-block').remove();
+			$('footer .bottom-block').prepend(footer_social_link);
+		}
+	</script>
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+		(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+		m[i].l=1*new Date();
+		for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+		k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+	
+		ym(95449836, "init", {
+			clickmap:true,
+			trackLinks:true,
+			accurateTrackBounce:true,
+			webvisor:true
+		});
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/95449836" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+</body>
+
+</html>
