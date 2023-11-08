@@ -104,11 +104,6 @@
 		</div>
 	</div>
 	<script type="text/javascript">
-		$('.phone .item a, #call-btn ').click(function () {
-			gtag('event', 'click', { 'event_category': 'phone' });
-		});
-	</script>
-	<script type="text/javascript">
 		$(document).ready(function () {
 			$('.pop-up .pop-up-win .close-pop-up').click(function () {
 				$('.pop-up').css({
@@ -124,84 +119,6 @@
 				$('.dropdown-menu .title').html($(this).attr('data-service'));
 			});
 
-		});
-	</script>
-	<script type="text/javascript">
-		function checkRequired(object) {
-			if ($(object).val() == '') {
-				$(object).parent('.input').addClass('required');
-			} else {
-				$(object).parent('.input').removeClass('required');
-			}
-		}
-		$('.pop-up .pop-up-win input[required="required"]').keyup(function () {
-			checkRequired($(this));
-		});
-		$('.pop-up .pop-up-win input[required="required"]').change(function () {
-			checkRequired($(this));
-		});
-	</script>
-	<script type="text/javascript">
-		function error_input(object) {
-			object.css({
-				'background-color': '#ffb0b0'
-			});
-			setTimeout(function () {
-				object.css({
-					'background-color': '#EDF1F9'
-				});
-			}, 4000);
-		}
-
-		$('.pop-up .pop-up-win .green-btn').click(function () {
-			var name = $('.pop-up .pop-up-win input[name="name"]'),
-				phone = $('.pop-up .pop-up-win input[name="phone"]'),
-				email = $('.pop-up .pop-up-win input[name="email"]'),
-				city = $('.pop-up .pop-up-win input[name="city"]'),
-				source = $('.pop-up .pop-up-win input[name="source"]'),
-				service = $('.dropdown-menu .title').html();
-
-			var submit = $(this);
-			submit
-				.attr('disabled', 'disabled')
-				.html('ОТПРАВКА...');
-
-			if (name.val().length < 3) {
-				error_input(name);
-				return;
-			}
-
-			if (phone.val().length < 9) {
-				error_input(phone);
-				return;
-			}
-
-			$.ajax({
-				type: 'POST',
-				url: 'php/send-order.php',
-				data: {
-					name: name.val(),
-					phone: phone.val(),
-					email: email.val(),
-					source: source.val(),
-					city: city.val(),
-					service: service
-				},
-				success: function (reply) {
-					console.log(reply);
-					$('.pop-up .pop-up-win>.title').html('Заявка отправлена! <span style="display: block;">Наш менеджер свяжется с Вами в ближайшее время</span>')
-					$('.pop-up .pop-up-win .form').hide();
-					gtag('event', 'submit', { 'event_category': 'form' });
-				},
-				error: function () {
-					alert('При отправке произошла ошибка. Пожалуйста, повторите попытку снова');
-				},
-				complete: function (argument) {
-					submit
-						.removeAttr('disabled')
-						.html('ОТПРАВИТЬ');
-				}
-			});
 		});
 	</script>
 	<div class="mobile-menu-block m-main">
