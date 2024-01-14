@@ -5,7 +5,7 @@
 	<title>WebMonsters - Агенство Интернет Решений</title>
 	<meta name="description"
 		content="Агентство WebMonsters - Мы оказываем комплексные услуги по   ✅ Созданию сайтов  ✅ Продвижение Instagram, Facebook   ✅ Таргетированной рекламе  ✅ Контекстная реклама  ✅Разработка Мобильных приложений  в Алматы, Казахстане, СНГ">
-	<meta name="keywords" content="">
+	<meta name="keywords" content="Портфолио разработка сайтов. Продвижение сайта">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -15,6 +15,7 @@
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<link rel="shortcut icon" href="imgs/favicon.png" type="image/png">
 
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -92,13 +93,15 @@
 				<div class="left-block">
 					<div class="input required name"><input type="text" name="user_name" required="required"
 							placeholder="Введите имя"></div>
-					<div class="input required phone"><input type="text" name="user_phone" required="required"
+					<div class="input required phone"><input id="phone-mask" type="text" name="user_phone" required="required"
 							placeholder="Введите телефон"></div>
 				</div>
 				<div class="right-block">
 					<div class="input email"><input type="text" name="user_email" placeholder="Введите E-Mail"></div>
 					<div class="input city"><input type="text" name="user_city" placeholder="Введите город"></div>
+					<div id="recaptcha_error"></div>
 				</div>
+				<div class="g-recaptcha" data-sitekey="6Lfw6FApAAAAAFIIVTiKDR5yOM-be1nt7GhxhY-s"></div>
 				<div class="bottom-block">
 					<button type="submit" class="green-btn">ОТПРАВИТЬ</button>
 				</div>
@@ -500,8 +503,8 @@
 			webvisor:true
 		});
 	</script>
-	<noscript><div><img src="https://mc.yandex.ru/watch/95449836" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-	<!-- /Yandex.Metrika counter -->
+	<script src="https://unpkg.com/imask"></script>
+	<script type="text/javascript" src="js/form.js"></script>
 </body>
 
 </html>

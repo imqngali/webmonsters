@@ -2,10 +2,10 @@
 <html>
 
 <head>
-	<title>WebMonsters - Агенство Интернет Решений</title>
+	<title>WebMonsters - Агенство Интернет Решений. Разработка приложений</title>
 	<meta name="description"
 		content="Агентство WebMonsters - Мы оказываем комплексные услуги по   ✅ Созданию сайтов  ✅ Продвижение Instagram, Facebook   ✅ Таргетированной рекламе  ✅ Контекстная реклама  ✅Разработка Мобильных приложений  в Алматы, Казахстане, СНГ">
-	<meta name="keywords" content="">
+	<meta name="keywords" content="Разработка приложений. Разработка приложений Алматы. Разработка приложений в Алматы">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -15,6 +15,7 @@
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<link rel="shortcut icon" href="imgs/favicon.png" type="image/png">
 
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -56,7 +57,7 @@
 								<ul>
 									<li><a href="sait.html" title="Создание сайтов/Landing Page">Создание сайтов/Landing
 											Page</a></li>
-									<li><a href="seo.html" title="Продвижение сайта, SEO">Продвижение сайта, SEO</a>
+									<li><a href="seo.html" title="Разработка приложений">Разработка приложений</a>
 									</li>
 									<li><a href="reklama.html" title="Контекстная реклама">Контекстная реклама</a></li>
 									<li><a href="target.html" title="Реклама в Instagram">Реклама в Instagram</a></li>
@@ -92,13 +93,15 @@
 				<div class="left-block">
 					<div class="input required name"><input type="text" name="user_name" required="required"
 							placeholder="Введите имя"></div>
-					<div class="input required phone"><input type="text" name="user_phone" required="required"
+					<div class="input required phone"><input id="phone-mask" type="text" name="user_phone" required="required"
 							placeholder="Введите телефон"></div>
 				</div>
 				<div class="right-block">
 					<div class="input email"><input type="text" name="user_email" placeholder="Введите E-Mail"></div>
 					<div class="input city"><input type="text" name="user_city" placeholder="Введите город"></div>
+					<div id="recaptcha_error"></div>
 				</div>
+				<div class="g-recaptcha" data-sitekey="6Lfw6FApAAAAAFIIVTiKDR5yOM-be1nt7GhxhY-s"></div>
 				<div class="bottom-block">
 					<button type="submit" class="green-btn">ОТПРАВИТЬ</button>
 				</div>
@@ -141,7 +144,7 @@
 		<div class="close-menu"></div>
 		<ul>
 			<li><a href="sait.html" title="Создание сайтов/Landing Page">Создание сайтов/Landing Page</a></li>
-			<li><a href="seo.html" title="Продвижение сайта, SEO">Продвижение сайта, SEO</a></li>
+			<li><a href="seo.html" title="Разработка приложений">Разработка приложений</a></li>
 			<li><a href="smm.html" title="Продвижение в Instagram">Продвижение в Instagram</a></li>
 			<li><a href="target.html" title="Реклама в Instagram">Реклама в Instagram</a></li>
 			<li><a href="reklama.html" title="Контекстная реклама">Контекстная реклама</a></li>
@@ -215,15 +218,14 @@
 		<div class="container">
 			<div class="description">
 				<div class="level-1">
-					ПОИСКОВОЕ <br><span>ПРОДВИЖЕНИЕ САЙТОВ <br>В ЯНДЕКСЕ И GOOGLE</span> </div>
-				<div class="level-2"><span style="display: none;">Улучшение видимости сайта</span></div>
-				<div class="level-3"><span><span class="n-mob">Улучшение видимости сайта в Яндексе, Google!</span><span
-							style="display: none;">в Яндексе, Google!</span></span>
+					РАЗРАБОТКА ПРИЛОЖЕНИЙ</span> </div>
+				
+				<div class="level-3"><span><span class="n-mob">Быстро окупается, безограничения клиентов</span></span>
 				</div>
 			</div>
 			<div class="buttons">
 				<button class="red-btn btn show-pop-up-btn"
-					data-service="Продвижение сайта, SEO">ЗАКАЗАТЬ ЗВОНОК</button>
+					data-service="Разработка приложений">ЗАКАЗАТЬ ЗВОНОК</button>
 			</div>
 		</div>
 	</div>
@@ -313,136 +315,138 @@
 					<div class="item" itemscope="" itemtype="http://schema.org/Product">
 						<div class="block b-01">
 							<div class="head">
-								<div class="title single" itemprop="name">SEO BASIC</div>
+								<div class="title single" itemprop="name">Информационное приложение</div>
 							</div>
 							<div class="body">
 								<div class="price" itemprop="offers" itemscope=""
 									itemtype="http://schema.org/AggregateOffer">
 									<link itemprop="availability" href="http://schema.org/InStock">
 									от
-									<span itemprop="lowPrice">69 000</span> тнг.
-									<meta itemprop="priceCurrency" content="KZT">/мес.
+									<span itemprop="lowPrice">899 000</span> тнг.
+									<meta itemprop="priceCurrency" content="KZT">
 								</div>
 								<div class="text" itemprop="description">
 									<ul>
-										<li>Количество поисковых запросов: 5 - 10</li>
-										<li>Бесплатный аудит сайта</li>
-										<li>Составление семантического ядра (ключевые слова)*</li>
-										<li>Текстовое наполнение продвигаемых страниц сайта</li>
-										<li>Оптимизация навигации сайта</li>
-										<li>Продвижение в поисковых системах Яндекс и Google</li>
-										<li>Регистрация сайта в каталогах</li>
-										<li>Размещение естественных ссылок на тематических форумах</li>
-										<li>Увеличение посещаемости сайта</li>
-										<li>Рекомендации по улучшению работы сайта</li>
-										<li>Оптимизация скорости загрузки сайта</li>
-										<li>Ежемесячная отчетность</li>
-										<li>Цель: ТОП 3</li>
+										<li>Текстовая информация</li>
+										<li>Отправка формы</li>
+										<li>Составление семантического ядра </li>
+										<li>Текстовое наполнение продвигаемых страниц</li>
+										<li>Оптимизация навигации</li>
+										
+										<li>Регистрация в google play, appStore</li>
+										
+										
+										
+										<li>Оптимизация скорости загрузки</li>
+										
+										
 
 									</ul>
 								</div>
 								<button
 									class="green-btn show-pop-up-btn"
-									data-service="Продвижение сайта, SEO">ЗАКАЗАТЬ</button>
+									data-service="Разработка приложений">ЗАКАЗАТЬ</button>
 							</div>
 						</div>
 					</div>
 					<div class="item" itemscope="" itemtype="http://schema.org/Product">
 						<div class="block b-02">
 							<div class="head">
-								<div class="title single" itemprop="name">SEO PRO</div>
+								<div class="title single" itemprop="name">PRO приложение</div>
 							</div>
 							<div class="body">
 								<div class="price" itemprop="offers" itemscope=""
 									itemtype="http://schema.org/AggregateOffer">
 									<link itemprop="availability" href="http://schema.org/InStock">
 									от
-									<span itemprop="lowPrice">119 000</span> тнг.
-									<meta itemprop="priceCurrency" content="KZT">/мес.
+									<span itemprop="lowPrice">2 299 000</span> тнг.
+									<meta itemprop="priceCurrency" content="KZT">
 								</div>
 								<div class="text" itemprop="description">
 									<ul>
-										<li>Количество поисковых запросов: 10 - 25</li>
-										<li>Бесплатный аудит сайта</li>
-										<li>Составление семантического ядра (ключевые слова)*</li>
-										<li>Текстовое наполнение продвигаемых страниц сайта</li>
-										<li>Оптимизация навигации сайта</li>
-										<li>Продвижение в поисковых системах Яндекс и Google</li>
-										<li>Регистрация сайта в каталогах</li>
-										<li>Размещение естественных ссылок на тематических форумах</li>
-										<li>Увеличение посещаемости сайта</li>
-										<li>Рекомендации по улучшению работы сайта</li>
-										<li>Оптимизация скорости загрузки сайта</li>
-										<li>Ежемесячная отчетность</li>
-										<li>Цель: ТОП 3</li>
+										<li>Количество страниц: до 15</li>
+										<li>Текстовая информация</li>
+										<li>Отправка формы</li>
+										<li>Функционал по заказу</li>
+										<li>Составление семантического ядра</li>
+										<li>Текстовое наполнение продвигаемых страниц</li>
+										<li>Оптимизация навигации</li>
+										
+										<li>Регистрация в google play, appStore</li>
+										
+										
+										
+										<li>Оптимизация скорости загрузки</li>
+										
+										
 
 									</ul>
 								</div>
 								<button
 									class="green-btn show-pop-up-btn"
-									data-service="Продвижение сайта, SEO">ЗАКАЗАТЬ</button>
+									data-service="Разработка приложений">ЗАКАЗАТЬ</button>
 							</div>
 						</div>
 					</div>
 					<div class="item" itemscope="" itemtype="http://schema.org/Product">
 						<div class="block b-03">
 							<div class="head">
-								<div class="title" itemprop="name">SEO PLATINUM</div>
+								<div class="title" itemprop="name">приложение <br>Интернет-магазин</div>
 							</div>
 							<div class="body">
 								<div class="price" itemprop="offers" itemscope=""
 									itemtype="http://schema.org/AggregateOffer">
 									<link itemprop="availability" href="http://schema.org/InStock">
 									от
-									<span itemprop="lowPrice">209 000</span> тнг.
-									<meta itemprop="priceCurrency" content="KZT">/мес.
+									<span itemprop="lowPrice">4 599 000</span> тнг.
+									<meta itemprop="priceCurrency" content="KZT">
 								</div>
 								<div class="text" itemprop="description">
 									<ul>
-										<li>Количество поисковых запросов: 25 - 50</li>
-										<li>Бесплатный аудит сайта</li>
-										<li>Составление семантического ядра (ключевые слова)*</li>
-										<li>Текстовое наполнение продвигаемых страниц сайта</li>
-										<li>Оптимизация навигации сайта</li>
-										<li>Продвижение в поисковых системах Яндекс и Google</li>
-										<li>Регистрация сайта в каталогах</li>
-										<li>Размещение естественных ссылок на тематических форумах</li>
-										<li>Увеличение посещаемости сайта</li>
-										<li>Рекомендации по улучшению работы сайта</li>
-										<li>Оптимизация скорости загрузки сайта</li>
-										<li>Ежемесячная отчетность</li>
-										<li>Цель: ТОП 3</li>
+										<li>Количество страниц: до 50</li>
+										<li>Текстовая информация</li>
+										<li>Отправка формы</li>
+										<li>Функционал по заказу</li>
+										<li>Личный кабинет</li>
+										<li>Прямая оплата</li>
+										<li>Составление семантического ядра</li>
+										<li>Текстовое наполнение продвигаемых страниц</li>
+										<li>Оптимизация навигации</li>
+										
+										<li>Регистрация в google play, appStore</li>
+										
+										
+										<li>Рекомендации по улучшению работы</li>
+										<li>Оптимизация скорости загрузки</li>
+										
 
 									</ul>
 								</div>
 								<button
 									class="green-btn show-pop-up-btn"
-									data-service="Продвижение сайта, SEO">ЗАКАЗАТЬ</button>
+									data-service="Разработка приложений">ЗАКАЗАТЬ</button>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="service-note">
-					<div class="title">Сколько времени нужно для продвижения сайта?</div>
+					<div class="title">Сколько времени нужно для окупаемости приложения?</div>
 					После начала продвижения следует запастись терпением — стабильные результаты обычно появляются не
 					ранее, чем через три–четыре месяца <br>после начала продвижения. За это время поисковые машины
-					обычно успевают проиндексировать расставленные ссылки, изменения на вашем<br> сайте и
+					обычно успевают проиндексировать расставленные ссылки, изменения на вашем<br> приложений и
 					скорректировать свою выдачу по данным запросам.
 				</div>
 			</div>
-			<h1>Seo продвижение Алматы – отличные возможности и перспективы для Вашего сайта</h1>
-			<p align="justify"><strong> СЕО продвижение сайтов </strong> - это отдельный и многокомпонентный комплекс
-				мероприятий и работы, направленных на организацию внутренней и внешней оптимизации любого сайта. Такие
-				действия специалистов СЕО сферы направлены на максимальную выдачу страницы на запросы пользователей в
-				различных поисковых системах, привлечение новых потенциальных клиентов для приобретения товаров или
-				услуг. <br>
+			<h1>Разработка приложений в Алматы – отличные возможности и перспективы для Вашего бизнеса</h1>
+			<p align="justify"><strong> Разработка приложений под ключ </strong> - это отдельный и многокомпонентный комплекс
+				мероприятий и работы, направленных на организацию внутренней и внешней оптимизации любого бизнеса. <br>
 
-				Правильное и профессиональное <strong> продвижение сайта </strong> позволяет значительно и
+				Правильное и профессиональное <strong> Разработка приложений </strong> позволяет значительно и
 				гарантированно увеличить целевую аудиторию ресурса.<br>
 
 				Наша компания – это грамотная и подготовленная команда специалистов, которые разбираются во всех
-				тонкостях и особенностях повышения популярности и рентабельности сайта для наращивания прибыли и
-				увеличения количества просмотров страниц. <br>
+				тонкостях и особенностях повышения популярности и рентабельности бизнеса для наращивания прибыли и
+				увеличения количества продаж. <br>
 			</p>
 			<div class="page-button-about" data-hidden="true">Подробнее</div>
 			<div class="hidden-content">
@@ -599,7 +603,7 @@
 				</div>
 			</div>
 			<button
-				class="border-btn get-cons show-pop-up-btn" data-service="Продвижение сайта, SEO">ЗАКАЗАТЬ
+				class="border-btn get-cons show-pop-up-btn" data-service="Разработка приложений">ЗАКАЗАТЬ
 				ЗВОНОК</button>
 		</div>
 	</div>
@@ -1087,7 +1091,7 @@
 				<div class="title">Услуги</div>
 				<ul>
 					<li><a href="sait.html" title="Создание сайтов/Landing Page">Создание сайтов/Landing Page</a></li>
-					<li><a href="seo.html" title="Продвижение сайта, SEO">Продвижение сайта, SEO</a></li>
+					<li><a href="seo.html" title="Разработка приложений">Разработка приложений</a></li>
 					<li><a href="reklama.html" title="Контекстная реклама">Контекстная реклама</a></li>
 					<li><a href="target.html" title="Реклама в Instagram">Реклама в Instagram</a></li>
 				</ul>
@@ -1162,8 +1166,8 @@
 			webvisor:true
 		});
 	</script>
-	<noscript><div><img src="https://mc.yandex.ru/watch/95449836" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-	<!-- /Yandex.Metrika counter -->
+	<script src="https://unpkg.com/imask"></script>
+	<script type="text/javascript" src="js/form.js"></script>
 </body>
 
 </html>

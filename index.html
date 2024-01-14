@@ -2,10 +2,10 @@
 <html>
 
 <head>
-	<title>WebMonsters - Агенство Интернет Решений</title>
+	<title>WebMonsters - Агенство Интернет Решений. Разработка, продвижение сайтов. Разработка приложений.</title>
 	<meta name="description"
 		content="Агентство WebMonsters - Мы оказываем комплексные услуги по   ✅ Созданию сайтов  ✅ Продвижение Instagram, Facebook   ✅ Таргетированной рекламе  ✅ Контекстная реклама  ✅Разработка Мобильных приложений  в Алматы, Казахстане, СНГ">
-	<meta name="keywords" content="">
+	<meta name="keywords" content="Разработка сайтов. Создание сайтов. Продвижение сайтов. Разработка сайтов Алматы. Создание сайтов Алматы. Продвижение сайтов Алматы.">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -15,6 +15,7 @@
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<link rel="shortcut icon" href="imgs/favicon.png" type="image/png">
 
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -56,7 +57,7 @@
 								<ul>
 									<li><a href="sait.html" title="Создание сайтов/Landing Page">Создание сайтов/Landing
 											Page</a></li>
-									<li><a href="seo.html" title="Продвижение сайта, SEO">Продвижение сайта, SEO</a>
+									<li><a href="seo.html" title="Разработка приложений">Разработка приложений</a>
 									</li>
 									<li><a href="reklama.html" title="Контекстная реклама">Контекстная реклама</a></li>
 									<li><a href="target.html" title="Реклама в Instagram">Реклама в Instagram</a></li>
@@ -92,13 +93,15 @@
 				<div class="left-block">
 					<div class="input required name"><input type="text" name="user_name" required="required"
 							placeholder="Введите имя"></div>
-					<div class="input required phone"><input type="text" name="user_phone" required="required"
+					<div class="input required phone"><input id="phone-mask" type="text" name="user_phone" required="required"
 							placeholder="Введите телефон"></div>
 				</div>
 				<div class="right-block">
 					<div class="input email"><input type="text" name="user_email" placeholder="Введите E-Mail"></div>
 					<div class="input city"><input type="text" name="user_city" placeholder="Введите город"></div>
+					<div id="recaptcha_error"></div>
 				</div>
+				<div class="g-recaptcha" data-sitekey="6Lfw6FApAAAAAFIIVTiKDR5yOM-be1nt7GhxhY-s"></div>
 				<div class="bottom-block">
 					<button type="submit" class="green-btn">ОТПРАВИТЬ</button>
 				</div>
@@ -141,7 +144,7 @@
 		<div class="close-menu"></div>
 		<ul>
 			<li><a href="sait.html" title="Создание сайтов/Landing Page">Создание сайтов/Landing Page</a></li>
-			<li><a href="seo.html" title="Продвижение сайта, SEO">Продвижение сайта, SEO</a></li>
+			<li><a href="seo.html" title="Разработка приложений">Разработка приложений</a></li>
 			<li><a href="smm.html" title="Продвижение в Instagram">Продвижение в Instagram</a></li>
 			<li><a href="target.html" title="Реклама в Instagram">Реклама в Instagram</a></li>
 			<li><a href="reklama.html" title="Контекстная реклама">Контекстная реклама</a></li>
@@ -336,25 +339,21 @@
 				<div class="item">
 					<div class="block b-02">
 						<div class="head">
-							<div class="title">ПРОДВИЖЕНИЕ САЙТА,<br>SEO</div>
+							<div class="title">Разработка приложений</div>
 						</div>
 						<div class="body">
 							<div class="price">от 
-								<span itemprop="lowPrice">219 000</span> тнг. <meta itemprop="priceCurrency" content="KZT">						</div>
+								<span itemprop="lowPrice">419 000</span> тнг. <meta itemprop="priceCurrency" content="KZT">						</div>
 							<div class="text">
 								Мы предлагаем комплекс услуг <br>
-								по продвижению вашего сайта. <br>
-								Комплекс включает внутреннюю <br>
-								и внешнюю оптимизацию ресурса <br>
-								(SEO). Мы занимаемся <br>
-								продвижением веб-сайтов <br>
-								исключительно посредством, <br>
-								так называемого белого SEO, <br>
-								когда в ход идут проверенные <br>
-								методы.
+								по разработке приложений. <br>
+								Работа с базой для роста продаж<br>
+								и внешнюю оптимизацию ресурса. <br>
+								Легкий доступ к информации.<br>
+								Push уведомления.<br>
 							</div>
 							<a href="seo.html" class="more-btn">Подробнее</a>
-							<button class="green-btn show-pop-up-btn" data-service="Продвижение сайта, SEO">ЗАКАЗАТЬ</button>
+							<button class="green-btn show-pop-up-btn" data-service="Разработка приложений">ЗАКАЗАТЬ</button>
 						</div>
 					</div>
 				</div>
@@ -954,7 +953,7 @@
 				<div class="title">Услуги</div>
 				<ul>
 					<li><a href="sait.html" title="Создание сайтов/Landing Page">Создание сайтов/Landing Page</a></li>
-					<li><a href="seo.html" title="Продвижение сайта, SEO">Продвижение сайта, SEO</a></li>
+					<li><a href="seo.html" title="Разработка приложений">Разработка приложений</a></li>
 					<li><a href="reklama.html" title="Контекстная реклама">Контекстная реклама</a></li>
 					<li><a href="target.html" title="Реклама в Instagram">Реклама в Instagram</a></li>
 				</ul>
@@ -1014,8 +1013,8 @@
 			webvisor:true
 		});
 	</script>
-	<noscript><div><img src="https://mc.yandex.ru/watch/95449836" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-	<!-- /Yandex.Metrika counter -->
+	<script src="https://unpkg.com/imask"></script>
+	<script type="text/javascript" src="js/form.js"></script>
 </body>
 
 </html>
