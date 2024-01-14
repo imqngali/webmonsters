@@ -10,6 +10,14 @@ form.addEventListener('submit', (e) =>{
         throw new Error("captcha")
         
     }
+
+    const fb = new FormData(e.target);
+    const params = new URLSearchParams(fb);
+
+    fetch('telegram.php', {
+        method: "POST",
+        body: params
+    }) 
 });
 
 IMask(
