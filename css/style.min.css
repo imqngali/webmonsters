@@ -109,7 +109,7 @@ ul:after {
     height: 100%;
     position: fixed;
     background-color: rgba(203, 203, 203, .95);
-    z-index: 999999999999;
+    z-index: 15;
     top: 0;
     left: 0;
     opacity: 0;
@@ -424,7 +424,7 @@ ul:after {
 
 header {
     height: 100px;
-    z-index: 9999;
+    z-index: 14;
     background-color: #fff;
     position: fixed;
     width: 100%;
@@ -2842,6 +2842,10 @@ header .bi-phone {
 
 .disabled {
     display: none;
+}
+
+#rc-imageselect {
+    opacity: 2 !important;
 }
 
 /*# sourceMappingURL=style.min.css.map */
