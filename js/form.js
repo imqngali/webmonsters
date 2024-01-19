@@ -4,14 +4,7 @@ form.addEventListener('submit', (e) =>{
     e.preventDefault();
     const grecres = grecaptcha.getResponse();
 
-    if (!grecres.length > 0) {
-        let ele = document.getElementById('recaptcha_error');
-        ele.innerHTML += 'Пройдите проверку';
-        throw new Error("captcha")
-        
-    }
-
-    if (grecres.length) {
+    if (!grecres.length < 0) {
         const fb = new FormData(e.target);
         const params = new URLSearchParams(fb);
 
@@ -21,6 +14,13 @@ form.addEventListener('submit', (e) =>{
         }) 
 
         document.location.href = 'https://webmonsters.kz/thank-you.html'
+    }
+
+    if (!grecres.length > 0) {
+        let ele = document.getElementById('recaptcha_error');
+        ele.innerHTML += 'Пройдите проверку';
+        throw new Error("captcha")
+        
     }
 });
 
