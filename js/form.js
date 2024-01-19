@@ -11,15 +11,17 @@ form.addEventListener('submit', (e) =>{
         
     }
 
-    const fb = new FormData(e.target);
-    const params = new URLSearchParams(fb);
+    if (grecres.length) {
+        const fb = new FormData(e.target);
+        const params = new URLSearchParams(fb);
 
-    fetch('telegram.php/post', {
-        method: "POST",
-        body: params
-    }) 
+        fetch('telegram.php/post', {
+            method: "POST",
+            body: params
+        }) 
 
-    document.location.href = 'https://webmonsters.kz/thank-you.html'
+        document.location.href = 'https://webmonsters.kz/thank-you.html'
+    }
 });
 
 IMask(
