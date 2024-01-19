@@ -11,7 +11,15 @@ form.addEventListener('submit', (e) =>{
         
     }
 
-    fetch;
+    const fb = new FormData(e.target);
+    const params = new URLSearchParams(fb);
+
+    fetch('telegram.php/post', {
+        method: "POST",
+        body: "dasdasda"
+    }) 
+
+    document.location.href = 'https://webmonsters.kz/thank-you.html'
 });
 
 IMask(
