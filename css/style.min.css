@@ -266,7 +266,7 @@ ul:after {
 .pop-up .pop-up-win .green-btn {
     display: table;
     margin: auto;
-    margin-top: 100px
+    margin-top: 50px
 }
 
 .mobile-menu-block {
@@ -2838,6 +2838,10 @@ header .bi-phone {
     width: -moz-available;          /* WebKit игнор. */
     width: -webkit-fill-available;  /* Mozilla игнор. */
     width: fill-available;
+}
+
+.disabled {
+    display: none;
 }
 
 /*# sourceMappingURL=style.min.css.map */

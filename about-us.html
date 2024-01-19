@@ -8,6 +8,13 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-PG6GLQ62');</script>
+	<!-- End Google Tag Manager -->
 	<link rel="stylesheet" href="css/style.min.css?v=4.7">
 	<link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/media.min.css?v=2.9">
@@ -32,6 +39,10 @@
 </head>
 
 <body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PG6GLQ62"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 	<header>
 		<div class="container">
 			<div class="left-block">
@@ -83,12 +94,18 @@
 	</header>
 	<div class="pop-up">
 		<div class="pop-up-win">
-			<div class="close-pop-up"></div>
+			<div id="close-form" class="close-pop-up"></div>
 			<div class="title">
 				Заполните форму
 				<span>и наш менеджер свяжется с Вами в ближайшее время</span>
 			</div>
-			<form class="form">
+			
+			<div id="captcha">
+				<div class="g-recaptcha" data-sitekey="6Lfw6FApAAAAAFIIVTiKDR5yOM-be1nt7GhxhY-s"></div>
+				<div id="recaptcha_error"></div>
+				<button id="captcha_btn" class="green-btn">Перейти к форме</button>
+			</div>
+			<form id="sait_form" class="form" action="telegram.php" method="POST">
 				<div class="left-block">
 					<div class="input required name"><input type="text" name="user_name" required="required"
 							placeholder="Введите имя"></div>
@@ -100,14 +117,10 @@
 					<div class="input city"><input type="text" name="user_city" placeholder="Введите город"></div>
 					<div id="recaptcha_error"></div>
 				</div>
-				<div class="g-recaptcha" data-sitekey="6Lfw6FApAAAAAFIIVTiKDR5yOM-be1nt7GhxhY-s"></div>
 				<div class="bottom-block">
 					<button type="submit" class="green-btn">ОТПРАВИТЬ</button>
 				</div>
 			</form>
-
-
-			<input type="hidden" name="source" value="">
 		</div>
 	</div>
 	<script type="text/javascript">
