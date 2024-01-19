@@ -16,7 +16,7 @@ form.addEventListener('submit', (e) =>{
 
     fetch('telegram.php/post', {
         method: "POST",
-        body: "dasdasda"
+        body: params
     }) 
 
     document.location.href = 'https://webmonsters.kz/thank-you.html'
